@@ -15,3 +15,4 @@ goToNextView() {
     Get.to(() => OnBoardingbody(), transition: Transition.rightToLeft);
   });
 }
+

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: ThemeData(fontFamily: 'cairo'),
       debugShowCheckedModeBanner: false,
-      home: const splash(),
+      home: const SignUp(),
     );
   }
 }

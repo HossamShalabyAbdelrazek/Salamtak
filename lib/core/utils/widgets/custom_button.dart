@@ -19,7 +19,7 @@ class CustomGeneralButton extends StatelessWidget {
       decoration: BoxDecoration(
           color: KMainColor, borderRadius: BorderRadius.circular(20)),
       child: MaterialButton(
-        padding: EdgeInsets.symmetric(vertical: 9, horizontal: 8),
+        padding: EdgeInsets.symmetric(vertical: 7, horizontal: 8),
         onPressed: onTap,
         child: Text(
           text!,
