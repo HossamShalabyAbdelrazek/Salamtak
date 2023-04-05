@@ -4,7 +4,7 @@ import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
 
-import '../../../on boarding/presentation/widgets/onboarding.dart';
+import '../../../on boarding/presentation/widgets/onboardingview.dart';
 
 class splashbody extends StatefulWidget {
   const splashbody({super.key});

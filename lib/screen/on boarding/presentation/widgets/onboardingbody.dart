@@ -4,7 +4,7 @@ import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
 
-import '../../../auth/presentation/widgets/SignUp.dart';
+import '../../../auth/presentation/pages/SignUpview.dart';
 
 class OnBoardingbody extends StatefulWidget {
   const OnBoardingbody({super.key});

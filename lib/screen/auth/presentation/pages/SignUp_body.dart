@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:second/core/constants.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
-import 'package:second/screen/splash/presentation/widgets/splash.dart';
+import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
-import '../../../../core/Text.dart';
+import '../../../../core/CustomText.dart';
 import '../../../on boarding/presentation/widgets/onboardingbody.dart';
 
 class SignUp_body extends StatefulWidget {
@@ -50,10 +50,12 @@ class _SignUp_bodyState extends State<SignUp_body> {
           CustomTextfeild(
             padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             text: 'اسم المستخدم',
+            icon: Icon(Icons.person),
           ),
           CustomTextfeild(
             padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             text: ' كلمة المرور',
+            icon: Icon(Icons.lock_clock_outlined),
           ),
           // Container(
           //   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
@@ -86,19 +88,25 @@ class _SignUp_bodyState extends State<SignUp_body> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomGeneralButton(
-                  height: 45,
-                  width: 140,
-                  text: 'تسجيل الدخول',
-                  onTap: () {},
-                  fontsize: 17,
+                Flexible(
+                  flex: 1,
+                  child: CustomGeneralButton(
+                    height: 45,
+                    width: 140,
+                    text: 'تسجيل الدخول',
+                    onTap: () {},
+                    fontsize: 17,
+                  ),
                 ),
-                CustomGeneralButton(
-                  height: 45,
-                  width: 150,
-                  text: 'ليس لدي حساب',
-                  onTap: () {},
-                  fontsize: 17,
+                Flexible(
+                  flex: 1,
+                  child: CustomGeneralButton(
+                    height: 45,
+                    width: 150,
+                    text: 'ليس لدي حساب',
+                    onTap: () {},
+                    fontsize: 17,
+                  ),
                 ),
                 // Container(
                 //   padding: EdgeInsets.all(8),

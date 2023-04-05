@@ -3,12 +3,12 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
-import 'package:second/screen/auth/presentation/widgets/SignUp.dart';
+import 'package:second/screen/auth/presentation/pages/SignUpview.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/onboardingbody.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/pageviewbody.dart';
-import 'package:second/screen/splash/presentation/widgets/splash.dart';
+import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
-import 'onboarding.dart';
+import 'onboardingview.dart';
 
 class onboarding1 extends StatefulWidget {
   const onboarding1({super.key});
