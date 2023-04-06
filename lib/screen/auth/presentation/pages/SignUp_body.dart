@@ -1,24 +1,24 @@
+// ignore_for_file: file_names, depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:second/core/constants.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
-import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
-import '../../../../core/CustomText.dart';
-import '../../../on boarding/presentation/widgets/onboardingbody.dart';
+import '../../../../core/customText.dart';
 
-class SignUp_body extends StatefulWidget {
-  const SignUp_body({super.key});
+// ignore: camel_case_types
+class signup_body extends StatefulWidget {
+  const signup_body({super.key});
 
   @override
-  State<SignUp_body> createState() => _SignUp_bodyState();
+  State<signup_body> createState() => _signup_bodyState();
 }
 
-class _SignUp_bodyState extends State<SignUp_body> {
+// ignore: camel_case_types
+class _signup_bodyState extends State<signup_body> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 5),
+      padding: const EdgeInsets.only(top: 5),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -41,46 +41,22 @@ class _SignUp_bodyState extends State<SignUp_body> {
           Container(
             height: 350,
             width: 350,
-            padding: EdgeInsets.only(left: 10),
-            child: Image(
+            padding: const EdgeInsets.only(left: 10),
+            child: const Image(
               image: AssetImage('assets/images/4.png'),
               fit: BoxFit.fill,
             ),
           ),
-          CustomTextfeild(
+          const custom_text_feild(
             padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             text: 'اسم المستخدم',
             icon: Icon(Icons.person),
           ),
-          CustomTextfeild(
+          const custom_text_feild(
             padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             text: ' كلمة المرور',
             icon: Icon(Icons.lock_clock_outlined),
           ),
-          // Container(
-          //   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-          //   child: TextFormField(
-          //     textAlign: TextAlign.center,
-          //     decoration: InputDecoration(
-          //         suffixIcon: Icon(Icons.person),
-          //         hintText: 'اسم المستخدم',
-          //         contentPadding: EdgeInsets.symmetric(vertical: 5),
-          //         border: OutlineInputBorder(
-          //             borderRadius: BorderRadius.circular(25))),
-          //   ),
-          // ),
-          // Container(
-          //   padding: EdgeInsets.symmetric(horizontal: 40),
-          //   child: TextFormField(
-          //     textAlign: TextAlign.center,
-          //     decoration: InputDecoration(
-          //         suffixIcon: Icon(Icons.lock_clock_outlined),
-          //         hintText: ' كلمة المرور',
-          //         contentPadding: EdgeInsets.symmetric(vertical: 5),
-          //         border: OutlineInputBorder(
-          //             borderRadius: BorderRadius.circular(25))),
-          //   ),
-          // ),
 
           Positioned(
             top: 20,
@@ -151,16 +127,14 @@ class _SignUp_bodyState extends State<SignUp_body> {
               ],
             ),
           ),
-          Divider(),
-          Container(
-            child: Text(
-              'يمكنك التسجيل ايضا عن طريق مواقع التواصل الاجتماعي',
-              style: TextStyle(fontFamily: "cairo", fontSize: 15),
-            ),
+          const Divider(),
+          const Text(
+            'يمكنك التسجيل ايضا عن طريق مواقع التواصل الاجتماعي',
+            style: TextStyle(fontFamily: "cairo", fontSize: 15),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 160, vertical: 10),
-            child: Row(
+            padding: const EdgeInsets.symmetric(horizontal: 160, vertical: 10),
+            child: const Row(
               children: [
                 Icon(Icons.facebook),
                 // IconData: FontAwasomeIcons.facebookF,

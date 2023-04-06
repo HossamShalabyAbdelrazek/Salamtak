@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:second/core/constants.dart';
 
@@ -15,11 +16,11 @@ class CustomGeneralButton extends StatelessWidget {
     return Container(
       height: height!,
       width: width!,
-      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
       decoration: BoxDecoration(
           color: KMainColor, borderRadius: BorderRadius.circular(20)),
       child: MaterialButton(
-        padding: EdgeInsets.symmetric(vertical: 7, horizontal: 8),
+        padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 8),
         onPressed: onTap,
         child: Text(
           text!,

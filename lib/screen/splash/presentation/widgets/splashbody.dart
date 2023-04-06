@@ -1,11 +1,10 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
-import 'package:get/get_navigation/src/routes/transitions_type.dart';
-import 'package:second/core/utils/widgets/custom_button.dart';
 
 import '../../../on boarding/presentation/widgets/onboardingview.dart';
 
+// ignore: camel_case_types
 class splashbody extends StatefulWidget {
   const splashbody({super.key});
 
@@ -13,6 +12,7 @@ class splashbody extends StatefulWidget {
   State<splashbody> createState() => _splashbodyState();
 }
 
+// ignore: camel_case_types
 class _splashbodyState extends State<splashbody> {
   @override
   void initState() {
@@ -20,8 +20,9 @@ class _splashbodyState extends State<splashbody> {
     goToNextView();
   }
 
+  @override
   Widget build(BuildContext context) {
-    return Stack(
+    return const Stack(
       children: [
         // Image.asset('assets/images/5.png'),
         Spacer(),
@@ -37,7 +38,7 @@ class _splashbodyState extends State<splashbody> {
 }
 
 void goToNextView() {
-  Future.delayed(Duration(seconds: 10), () {
-    Get.to(() => onboarding(), transition: Transition.rightToLeft);
+  Future.delayed(const Duration(seconds: 10), () {
+    Get.to(() => const onboarding(), transition: Transition.rightToLeft);
   });
 }

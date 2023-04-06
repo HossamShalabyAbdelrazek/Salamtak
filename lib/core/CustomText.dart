@@ -1,7 +1,10 @@
+// ignore_for_file: file_names, depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 
-class CustomTextfeild extends StatelessWidget {
-  const CustomTextfeild({Key? key, this.text, this.padding, this.icon})
+// ignore: camel_case_types
+class custom_text_feild extends StatelessWidget {
+  const custom_text_feild({Key? key, this.text, this.padding, this.icon})
       : super(key: key);
   final String? text;
   final EdgeInsetsGeometry? padding;
@@ -15,7 +18,7 @@ class CustomTextfeild extends StatelessWidget {
         decoration: InputDecoration(
             suffixIcon: icon!,
             hintText: text!,
-            contentPadding: EdgeInsets.symmetric(vertical: 5),
+            contentPadding: const EdgeInsets.symmetric(vertical: 5),
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(25))),
       ),

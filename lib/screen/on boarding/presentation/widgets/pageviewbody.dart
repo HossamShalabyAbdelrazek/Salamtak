@@ -1,6 +1,7 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
+// ignore: camel_case_types
 class pageviewbody extends StatelessWidget {
   const pageviewbody({Key? key, this.title, this.image}) : super(key: key);
   final String? title;
@@ -11,11 +12,11 @@ class pageviewbody extends StatelessWidget {
       children: [
         
         SizedBox(height: 320, child: Image.asset(image!)),
-        Divider(),
-        Divider(),
+        const Divider(),
+        const Divider(),
         Text(
           title!,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 25,
           ),
           textAlign: TextAlign.center,

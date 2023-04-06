@@ -1,15 +1,14 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
-import 'package:second/screen/auth/presentation/pages/SignUpview.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/onboardingbody.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/pageviewbody.dart';
-import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
-import 'onboardingview.dart';
 
+// ignore: camel_case_types
 class onboarding1 extends StatefulWidget {
   const onboarding1({super.key});
 
@@ -17,6 +16,7 @@ class onboarding1 extends StatefulWidget {
   State<onboarding1> createState() => _onboarding1State();
 }
 
+// ignore: camel_case_types
 class _onboarding1State extends State<onboarding1> {
   @override
   // void initState() {
@@ -28,7 +28,7 @@ class _onboarding1State extends State<onboarding1> {
     return Stack(
       children: [
         PageView(
-          children: [
+          children: const [
             pageviewbody(
               image: 'assets/images/1.png',
               title: 'سوف نقدم لك كل المساعدات الطبيه التي تحتاجها',
@@ -58,7 +58,7 @@ class _onboarding1State extends State<onboarding1> {
 }
 
 goToNextView() {
-  Future.delayed(Duration(seconds: 0), () {
-    Get.to(() => OnBoardingbody(), transition: Transition.rightToLeft);
+  Future.delayed(const Duration(seconds: 0), () {
+    Get.to(() => const OnBoardingbody(), transition: Transition.rightToLeft);
   });
 }

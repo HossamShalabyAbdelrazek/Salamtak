@@ -1,10 +1,11 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
 
-import '../../../auth/presentation/pages/SignUpview.dart';
+import '../../../auth/presentation/pages/signupview.dart';
 
 class OnBoardingbody extends StatefulWidget {
   const OnBoardingbody({super.key});
@@ -15,15 +16,13 @@ class OnBoardingbody extends StatefulWidget {
 
 class _OnBoardingbodyState extends State<OnBoardingbody> {
   @override
- 
-
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             height: 550,
             width: 600,
             child: Stack(
@@ -36,7 +35,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                     // fit: BoxFit.fill,
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   top: 380,
                   left: 80,
                   child: Text(
@@ -47,7 +46,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   top: 450,
                   left: 70,
                   child: Text(
@@ -73,7 +72,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                 fontsize: 16,
                 text: 'مستخدم',
               ),
-              CustomGeneralButton(
+              const CustomGeneralButton(
                 height: 85,
                 width: 180,
                 fontsize: 15,
@@ -88,7 +87,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
 }
 
 goToNextView() {
-  Future.delayed(Duration(seconds: 0), () {
-    Get.to(() => SignUp(), transition: Transition.rightToLeft);
+  Future.delayed(const Duration(seconds: 0), () {
+    Get.to(() => const signup(), transition: Transition.rightToLeft);
   });
 }
