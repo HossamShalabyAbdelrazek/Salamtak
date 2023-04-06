@@ -7,7 +7,6 @@ import 'package:second/core/utils/widgets/custom_button.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/onboardingbody.dart';
 import 'package:second/screen/on%20boarding/presentation/widgets/pageviewbody.dart';
 
-
 // ignore: camel_case_types
 class onboarding1 extends StatefulWidget {
   const onboarding1({super.key});
@@ -19,11 +18,6 @@ class onboarding1 extends StatefulWidget {
 // ignore: camel_case_types
 class _onboarding1State extends State<onboarding1> {
   @override
-  // void initState() {
-  //   super.initState();
-  //   goToNextView();
-  // }
-
   Widget build(BuildContext context) {
     return Stack(
       children: [

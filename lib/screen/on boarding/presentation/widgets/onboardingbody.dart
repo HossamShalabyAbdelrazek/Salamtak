@@ -6,6 +6,7 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
 
 import '../../../auth/presentation/pages/signupview.dart';
+import '../../../auth/presentation/service provider auth/serviceprovider.dart';
 
 class OnBoardingbody extends StatefulWidget {
   const OnBoardingbody({super.key});
@@ -72,7 +73,10 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                 fontsize: 16,
                 text: 'مستخدم',
               ),
-              const CustomGeneralButton(
+              CustomGeneralButton(
+                onTap: () {
+                  goToserviceView();
+                },
                 height: 85,
                 width: 180,
                 fontsize: 15,
@@ -89,5 +93,11 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
 goToNextView() {
   Future.delayed(const Duration(seconds: 0), () {
     Get.to(() => const signup(), transition: Transition.rightToLeft);
+  });
+}
+
+goToserviceView() {
+  Future.delayed(const Duration(seconds: 0), () {
+    Get.to(() => const chooseserviceview(), transition: Transition.rightToLeft);
   });
 }
