@@ -18,6 +18,7 @@ class custom_text_feild extends StatelessWidget {
         decoration: InputDecoration(
             suffixIcon: icon!,
             hintText: text!,
+            isDense: true,
             contentPadding: const EdgeInsets.symmetric(vertical: 5),
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(25))),
