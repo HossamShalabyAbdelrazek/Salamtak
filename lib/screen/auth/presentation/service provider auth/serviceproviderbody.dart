@@ -7,7 +7,7 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
 import '../../../../core/utils/widgets/custom_button.dart';
-import '../createaccount/createaccountview.dart';
+import '../createaccount/createaccountbody.dart';
 
 // ignore: camel_case_types
 class chooseservicebody extends StatelessWidget {
@@ -112,6 +112,7 @@ class chooseservicebody extends StatelessWidget {
 
 goToNextView() {
   Future.delayed(const Duration(seconds: 0), () {
-    Get.to(() => const createaccountview(), transition: Transition.rightToLeft);
+    Get.to(() => const createaccount_body(),
+        transition: Transition.rightToLeft);
   });
 }

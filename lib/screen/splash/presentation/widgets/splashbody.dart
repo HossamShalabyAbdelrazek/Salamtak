@@ -1,8 +1,12 @@
+// ignore: duplicate_ignore
 // ignore: depend_on_referenced_packages
+// ignore_for_file: non_constant_identifier_names, depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:second/screen/auth/presentation/pages/loginscreen_body.dart';
 
-import '../../../on boarding/presentation/widgets/onboardingview.dart';
+// import '../../../on boarding/presentation/widgets/onboardingview.dart';
 
 // ignore: camel_case_types
 class splashbody extends StatefulWidget {
@@ -17,7 +21,7 @@ class _splashbodyState extends State<splashbody> {
   @override
   void initState() {
     super.initState();
-    goToonboardingview();
+    goTologinscreen_body();
   }
 
   @override
@@ -32,8 +36,8 @@ class _splashbodyState extends State<splashbody> {
   }
 }
 
-void goToonboardingview() {
-  Future.delayed(const Duration(seconds: 10), () {
-    Get.to(() => const onboardingview(), transition: Transition.rightToLeft);
+void goTologinscreen_body() {
+  Future.delayed(const Duration(seconds: 15), () {
+    Get.to(() => const loginscreen_body(), transition: Transition.rightToLeft);
   });
 }

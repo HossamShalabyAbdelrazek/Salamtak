@@ -5,7 +5,7 @@ import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:second/core/utils/widgets/custom_button.dart';
 
-import '../../../auth/presentation/pages/signupview.dart';
+// import '../../../auth/presentation/pages/loginscreenview.dart';
 import '../../../auth/presentation/service provider auth/serviceprovider.dart';
 
 class OnBoardingbody extends StatefulWidget {
@@ -37,8 +37,8 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                   ),
                 ),
                 const Positioned(
-                  top: 380,
-                  left: 80,
+                  top: 400,
+                  left: 70,
                   child: Text(
                     '                    ..... مرحباً بك ',
                     style: TextStyle(
@@ -48,8 +48,8 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                   ),
                 ),
                 const Positioned(
-                  top: 450,
-                  left: 70,
+                  top: 490,
+                  left: 50,
                   child: Text(
                     // 'نحن هنا سنساعدك في عرض خدمتك او الاستفاده من الخدمات المقدمة سوف نكون سعداء بنضمامك الينا',
                     'سوف نكون سعداء بإنضمامك إلينا',
@@ -62,27 +62,33 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
               ],
             ),
           ),
-          Row(
-            children: [
-              CustomGeneralButton(
-                onTap: () {
-                  goToNextView();
-                },
-                height: 85,
-                width: 180,
-                fontsize: 16,
-                text: 'مستخدم',
-              ),
-              CustomGeneralButton(
-                onTap: () {
-                  goToserviceView();
-                },
-                height: 85,
-                width: 180,
-                fontsize: 15,
-                text: 'مقدم خدمة',
-              ),
-            ],
+          const Divider(),
+          const Divider(),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(12),
+            child: Row(
+              children: [
+                CustomGeneralButton(
+                  onTap: () {
+                    goToNextView();
+                  },
+                  height: 60,
+                  width: 160,
+                  fontsize: 16,
+                  text: 'مستخدم',
+                ),
+                CustomGeneralButton(
+                  onTap: () {
+                    goToserviceView();
+                  },
+                  height: 60,
+                  width: 160,
+                  fontsize: 15,
+                  text: 'مقدم خدمة',
+                ),
+              ],
+            ),
           )
         ],
       ),
@@ -92,7 +98,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
 
 goToNextView() {
   Future.delayed(const Duration(seconds: 0), () {
-    Get.to(() => const signup(), transition: Transition.rightToLeft);
+    Get.to(() => const chooseserviceview(), transition: Transition.rightToLeft);
   });
 }
 
