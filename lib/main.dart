@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: ThemeData(fontFamily: 'cairo'),
       debugShowCheckedModeBanner: false,
-      home: const Medicaltipspage_body(),
+      home: const splash(),
     );
   }
 }

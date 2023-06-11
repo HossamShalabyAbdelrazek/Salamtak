@@ -20,130 +20,112 @@ class _tipshypertensivepatientpage_bodyState
         children: [
           Container(
             margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d35.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 600,
+            width: 600,
+            child: const Image(image: AssetImage('assets/images/d21.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d22.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d23.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 500,
+            width: 500,
+            child: const Image(image: AssetImage('assets/images/d24.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 500,
+            width: 500,
+            child: const Image(image: AssetImage('assets/images/d25.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 500,
+            width: 500,
+            child: const Image(image: AssetImage('assets/images/d26.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
             height: 300,
             width: 250,
-            child: const Image(
-                image: AssetImage('assets/images/d2.png')),
+            child: const Image(image: AssetImage('assets/images/d27.png')),
           ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d21.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d22.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d23.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d24.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d25.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d26.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d27.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d28.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d29.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d30.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d31.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d32.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d33.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d34.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d36.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d37.png')),
-          // ),
-          // Container(
-          //   margin: const EdgeInsets.symmetric(vertical: 10),
-          //   height: 300,
-          //   width: 250,
-          //   child: const Image(
-          //       image: AssetImage('assets/images/hypertensive/d38.png')),
-          // ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
+            height: 600,
+            width: 600,
+            child: const Image(image: AssetImage('assets/images/d28.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d29.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d30.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
+            height: 600,
+            width: 600,
+            child: const Image(image: AssetImage('assets/images/d31.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 0),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d32.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d33.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d34.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d36.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d37.png')),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            height: 400,
+            width: 400,
+            child: const Image(image: AssetImage('assets/images/d38.png')),
+          ),
         ],
       ),
     );
