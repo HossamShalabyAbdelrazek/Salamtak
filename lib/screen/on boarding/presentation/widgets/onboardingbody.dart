@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
-import 'package:second/core/utils/widgets/custom_button.dart';
+import 'package:second/core/custom_button.dart';
+import 'package:second/screen/service%20provider%20auth/serviceprovider.dart';
 
 // import '../../../auth/presentation/pages/loginscreenview.dart';
-import '../../../auth/presentation/service provider auth/serviceprovider.dart';
 
 class OnBoardingbody extends StatefulWidget {
   const OnBoardingbody({super.key});

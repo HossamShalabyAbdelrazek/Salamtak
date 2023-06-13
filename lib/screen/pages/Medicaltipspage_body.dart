@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:second/screen/auth/presentation/pages/tipsdiabeticpatientpage_body.dart';
-import 'package:second/screen/auth/presentation/pages/tipsgeneraltpage_body.dart';
-import 'package:second/screen/auth/presentation/pages/tipsheartpatientpage_body.dart';
-import 'package:second/screen/auth/presentation/pages/tipshypertensivepatientpage_body.dart';
+import 'package:second/screen/pages/tipsdiabeticpatientpage_body.dart';
+import 'package:second/screen/pages/tipsgeneraltpage_body.dart';
+import 'package:second/screen/pages/tipsheartpatientpage_body.dart';
+import 'package:second/screen/pages/tipshypertensivepatientpage_body.dart';
 
 class Medicaltipspage_body extends StatefulWidget {
   const Medicaltipspage_body({super.key});

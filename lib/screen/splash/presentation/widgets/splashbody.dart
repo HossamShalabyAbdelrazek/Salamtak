@@ -4,7 +4,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:second/screen/auth/presentation/pages/loginscreen_body.dart';
+import 'package:second/screen/createaccount/loginscreen_body.dart';
+
 
 // import '../../../on boarding/presentation/widgets/onboardingview.dart';
 
@@ -37,7 +38,7 @@ class _splashbodyState extends State<splashbody> {
 }
 
 void goTologinscreen_body() {
-  Future.delayed(const Duration(seconds: 15), () {
+  Future.delayed(const Duration(seconds: 8), () {
     Get.to(() => const loginscreen_body(), transition: Transition.rightToLeft);
   });
 }

@@ -1,7 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
-import 'package:second/screen/auth/presentation/service%20provider%20auth/serviceproviderbody.dart';
+import 'package:second/screen/service%20provider%20auth/serviceproviderbody.dart';
 
 // ignore: camel_case_types
 class chooseserviceview extends StatelessWidget {

@@ -2,11 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:second/screen/auth/presentation/createaccount/createaccountbody.dart';
-import 'package:second/screen/auth/presentation/pages/HomePage_body.dart';
-import 'package:second/screen/auth/presentation/pages/Medicaltipspage_body.dart';
-import 'package:second/screen/auth/presentation/service%20provider%20auth/serviceprovider.dart';
-import 'package:second/screen/auth/presentation/service%20provider%20auth/serviceproviderbody.dart';
 import 'package:second/screen/splash/presentation/widgets/splashview.dart';
 
 void main() {

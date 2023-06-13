@@ -2,17 +2,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:second/core/utils/widgets/custom_button.dart';
-import 'package:second/screen/auth/presentation/pages/Labspage_body.dart';
-import 'package:second/screen/auth/presentation/pages/Medicaltipspage_body.dart';
-import 'package:second/screen/auth/presentation/pages/clinicspage_body.dart';
-import 'package:second/screen/auth/presentation/pages/hospitalspage_body.dart';
-import 'package:second/screen/auth/presentation/pages/pharmaciespage_body.dart';
-import 'package:second/screen/auth/presentation/pages/rayspage_body.dart';
-// ignore: unused_import
-import '../../../../core/constants.dart';
-// ignore: unused_import
-import '../pages/loginscreen_body.dart';
+import 'package:second/core/custom_button.dart';
+
+import 'package:second/screen/pages/Labspage_body.dart';
+import 'package:second/screen/pages/Medicaltipspage_body.dart';
+import 'package:second/screen/pages/clinicspage_body.dart';
+import 'package:second/screen/pages/hospitalspage_body.dart';
+import 'package:second/screen/pages/pharmaciespage_body.dart';
+import 'package:second/screen/pages/profilePage.dart';
+import 'package:second/screen/pages/rayspage_body.dart';
+import 'package:second/screen/pages/settingpage.dart';
 
 class HomePage_body extends StatefulWidget {
   const HomePage_body({super.key});
@@ -22,16 +21,21 @@ class HomePage_body extends StatefulWidget {
 }
 
 class _HomePage_bodyState extends State<HomePage_body> {
+  int selectedindex = 2;
+  List screens = [
+    const settingspage(),
+    const HomePage_body(),
+    const profilePage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
-          const SizedBox(height: 35),
+          const SizedBox(height: 20),
           Row(
             children: [
-              // ignore: sized_box_for_whitespace
-              Container(
+              SizedBox(
                 height: 60,
                 width: 90,
                 child: Flexible(
@@ -65,8 +69,7 @@ class _HomePage_bodyState extends State<HomePage_body> {
             ],
           ),
           Container(
-            // margin: EdgeInsets.all(20),
-            height: 700,
+            height: 650,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             child: ListView(
               scrollDirection: Axis.vertical,
@@ -75,9 +78,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                 Row(
                   children: [
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 210,
-                        width: 160,
+                        width: 140,
                         child: Column(
                           children: [
                             const Image(
@@ -96,9 +99,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                           ],
                         )),
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 210,
-                        width: 160,
+                        width: 140,
                         child: Column(
                           children: [
                             const Image(
@@ -121,9 +124,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                 Row(
                   children: [
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 210,
-                        width: 160,
+                        width: 140,
                         child: Column(
                           children: [
                             const Image(
@@ -142,9 +145,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                           ],
                         )),
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 210,
-                        width: 160,
+                        width: 140,
                         child: Column(
                           children: [
                             const Image(
@@ -167,9 +170,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                 Row(
                   children: [
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 240,
-                        width: 160,
+                        width: 150,
                         child: Column(
                           children: [
                             const Image(
@@ -188,9 +191,9 @@ class _HomePage_bodyState extends State<HomePage_body> {
                           ],
                         )),
                     Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         height: 220,
-                        width: 160,
+                        width: 140,
                         child: Column(
                           children: [
                             const Image(
@@ -212,9 +215,31 @@ class _HomePage_bodyState extends State<HomePage_body> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.lightBlueAccent,
+          selectedItemColor: Colors.white,
+          currentIndex: selectedindex,
+          iconSize: 25,
+          selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          onTap: (index) {
+            setState(() {
+              selectedindex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+                label: 'الاعدادات', icon: Icon(Icons.settings)),
+            // BottomNavigationBarItem(label: 'الحجوزات', icon: Icon(Icons.abc)),
+            BottomNavigationBarItem(label: 'الرئيسية', icon: Icon(Icons.home)),
+            // BottomNavigationBarItem(label: ' العروض', icon: Icon(Icons.person)),
+            BottomNavigationBarItem(
+                label: 'الصفحة الشخصية', icon: Icon(Icons.person))
+          ]),
+      // extendBody: screens[selectedindex],
     );
   }
 }
