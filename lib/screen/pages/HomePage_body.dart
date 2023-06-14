@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, depend_on_referenced_packages, camel_case_types, avoid_unnecessary_containers, non_constant_identifier_names
+// ignore_for_file: file_names, depend_on_referenced_packages, camel_case_types, avoid_unnecessary_containers, non_constant_identifier_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,12 +6,11 @@ import 'package:second/core/custom_button.dart';
 
 import 'package:second/screen/pages/Labspage_body.dart';
 import 'package:second/screen/pages/Medicaltipspage_body.dart';
+// import 'package:second/screen/pages/bottombar.dart';
 import 'package:second/screen/pages/clinicspage_body.dart';
 import 'package:second/screen/pages/hospitalspage_body.dart';
 import 'package:second/screen/pages/pharmaciespage_body.dart';
-import 'package:second/screen/pages/profilePage.dart';
 import 'package:second/screen/pages/rayspage_body.dart';
-import 'package:second/screen/pages/settingpage.dart';
 
 class HomePage_body extends StatefulWidget {
   const HomePage_body({super.key});
@@ -21,12 +20,6 @@ class HomePage_body extends StatefulWidget {
 }
 
 class _HomePage_bodyState extends State<HomePage_body> {
-  int selectedindex = 2;
-  List screens = [
-    const settingspage(),
-    const HomePage_body(),
-    const profilePage()
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -218,27 +211,7 @@ class _HomePage_bodyState extends State<HomePage_body> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.lightBlueAccent,
-          selectedItemColor: Colors.white,
-          currentIndex: selectedindex,
-          iconSize: 25,
-          selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
-          unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
-          onTap: (index) {
-            setState(() {
-              selectedindex = index;
-            });
-          },
-          items: const [
-            BottomNavigationBarItem(
-                label: 'الاعدادات', icon: Icon(Icons.settings)),
-            // BottomNavigationBarItem(label: 'الحجوزات', icon: Icon(Icons.abc)),
-            BottomNavigationBarItem(label: 'الرئيسية', icon: Icon(Icons.home)),
-            // BottomNavigationBarItem(label: ' العروض', icon: Icon(Icons.person)),
-            BottomNavigationBarItem(
-                label: 'الصفحة الشخصية', icon: Icon(Icons.person))
-          ]),
+
       // extendBody: screens[selectedindex],
     );
   }

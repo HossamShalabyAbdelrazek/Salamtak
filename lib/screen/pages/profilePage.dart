@@ -24,7 +24,7 @@ class _profilePageState extends State<profilePage> {
           Container(
             margin: const EdgeInsets.all(20.0),
             width: MediaQuery.of(context).size.width / 6,
-            height: MediaQuery.of(context).size.height / 3,
+            height: MediaQuery.of(context).size.height / 4,
             child: const ClipOval(
                 child: Image(image: AssetImage('assets/images/Hossam.png'))),
           ),

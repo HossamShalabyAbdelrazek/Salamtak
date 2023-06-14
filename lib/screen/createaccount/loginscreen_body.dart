@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:second/core/custom_button.dart';
-import 'package:second/screen/pages/HomePage_body.dart';
+import 'package:second/screen/pages/botnavbar.dart';
 
 // import '../../../../core/customText.dart';
 import '../createaccount/createaccountbody.dart';
@@ -77,7 +77,7 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                           width: 300,
                           text: 'تسجيل الدخول',
                           onTap: () {
-                            goToHomePage_body();
+                            goTobottombar();
                           },
                           fontsize: 20,
                         ),
@@ -132,9 +132,9 @@ goTocreateaccount_body() {
   });
 }
 
-// ignore: non_constant_identifier_names
-goToHomePage_body() {
+
+goTobottombar() {
   Future.delayed(const Duration(seconds: 0), () {
-    Get.to(() => const HomePage_body(), transition: Transition.rightToLeft);
+    Get.to(() => const botnavbar(), transition: Transition.rightToLeft);
   });
 }

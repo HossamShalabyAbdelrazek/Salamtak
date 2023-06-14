@@ -38,7 +38,7 @@ class _splashbodyState extends State<splashbody> {
 }
 
 void goTologinscreen_body() {
-  Future.delayed(const Duration(seconds: 8), () {
+  Future.delayed(const Duration(seconds: 15), () {
     Get.to(() => const loginscreen_body(), transition: Transition.rightToLeft);
   });
 }
