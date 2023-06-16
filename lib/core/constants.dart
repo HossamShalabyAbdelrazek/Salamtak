@@ -8,7 +8,8 @@ import '../screen/on boarding/presentation/widgets/onboardingbody.dart';
 
 // const KMainColor = Color.fromARGB(255, 46, 156, 55);
 // ignore: constant_identifier_names
-const KMainColor = Color.fromARGB(255, 59, 133, 194);
+const KMainColor = Color(0xff034854);
+// const KMainColor = Color.fromARGB(255, 59, 133, 194);
 // const KMainColor = Color.fromARGB(255, 4, 102, 102);
 
 goToNextView() {

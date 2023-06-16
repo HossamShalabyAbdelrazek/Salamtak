@@ -25,7 +25,7 @@ class chooseservicebody extends StatelessWidget {
               width: 350,
               padding: const EdgeInsets.only(left: 10),
               child: const Image(
-                image: AssetImage('assets/images/l2.png'),
+                image: AssetImage('assets/images/6.png'),
                 fit: BoxFit.fill,
               ),
             ),

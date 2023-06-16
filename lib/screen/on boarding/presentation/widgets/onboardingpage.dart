@@ -19,33 +19,58 @@ class onboarding1 extends StatefulWidget {
 class _onboarding1State extends State<onboarding1> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        PageView(
-          children: const [
-            pageviewbody(
-              image: 'assets/images/1.png',
-              title: 'سوف نقدم لك كل المساعدات الطبيه التي تحتاجها',
-            ),
-            pageviewbody(
-              image: 'assets/images/11.png',
-              title: 'سوف نساعدك في تقديم خدمتك الطبية بكل سهوله',
-            ),
-          ],
+        const SizedBox(
+          height: 50,
         ),
-        // Divider(),
-        Positioned(
-            bottom: 35,
-            left: 120,
-            child: CustomGeneralButton(
-              onTap: () {
-                goToNextView();
-              },
-              text: 'التالي',
-              height: 70,
-              width: 150,
-              fontsize: 15,
-            ))
+        SizedBox(
+          height: 500,
+          width: 400,
+          child: PageView(
+            children: const [
+              pageviewbody(
+                image: 'assets/images/onboard1.png',
+                title: ' سنقدم لك كل المساعدات الطبيه التي تحتاجها',
+              ),
+              pageviewbody(
+                image: 'assets/images/onboard2.png',
+                title: ' سنساعدك في تقديم خدمتك الطبية بكل سهوله',
+              ),
+              pageviewbody(
+                image: 'assets/images/brd3.png',
+                title: 'ابحث عن علاجك عند اشهر الصيدليات ',
+              ),
+              pageviewbody(
+                image: 'assets/images/brd4.png',
+                title: 'قم بالحـجز مع افضل الاطـباء المتخصصين',
+              ),
+            ],
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(20, 0, 20, 40),
+          child: Text(
+            '    سـتجد كل ما تحتاجه من خدمات طبية ونصائح تساعدك في'
+            '  تحسين حالتك الصحية والبحث عن اشهر العيادات '
+            ' التخصصية والحجز معهم وطلب الدواء من اشهر الصيدليات و تقديم الخدمة الطبية بعد التسجيل',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.black54,
+            ),
+            textDirection: TextDirection.rtl,
+          ),
+        ),
+        CustomGeneralButton(
+          onTap: () {
+            goToNextView();
+          },
+          text: 'تخطي',
+          height: 70,
+          width: 150,
+          fontsize: 15,
+        ),
       ],
     );
   }

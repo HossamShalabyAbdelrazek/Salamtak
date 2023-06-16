@@ -7,6 +7,8 @@ import 'package:second/screen/pages/ordarspage.dart';
 import 'package:second/screen/pages/profilePage.dart';
 import 'package:second/screen/pages/settingpage.dart';
 
+import '../../core/constants.dart';
+
 class botnavbar extends StatefulWidget {
   const botnavbar({super.key});
 
@@ -31,8 +33,8 @@ class _botnavbarState extends State<botnavbar> {
           height: 60,
           child: BottomNavigationBar(
               backgroundColor: Colors.white,
-              selectedItemColor: Colors.blue,
-              unselectedItemColor: Colors.black,
+              selectedItemColor: KMainColor,
+              unselectedItemColor: Colors.blueGrey,
               currentIndex: selectedindex,
               iconSize: 20,
               selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:second/core/constants.dart';
 import 'package:second/core/custom_button.dart';
 import 'package:second/screen/createaccount/loginscreen_body.dart';
 
@@ -21,6 +22,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
           children: [
             Column(
               children: [
+                // const Image(image: AssetImage('assets/images/acc.png')),
                 const Image(image: AssetImage('assets/images/9.png')),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -31,7 +33,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                       hintText: 'الاسم بالكامل',
                       suffixIcon: const Icon(
                         Icons.account_circle,
-                        color: Color.fromARGB(255, 70, 157, 179),
+                        color: KMainColor,
                         size: 40,
                       ),
                       contentPadding: const EdgeInsets.symmetric(vertical: 17),
@@ -51,7 +53,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                       hintText: ' عنوان البريد الإلكتروني ',
                       suffixIcon: const Icon(
                         Icons.email,
-                        color: Color.fromARGB(255, 70, 157, 179),
+                        color: KMainColor,
                         size: 40,
                       ),
                       contentPadding: const EdgeInsets.symmetric(vertical: 17),
@@ -71,7 +73,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                       hintText: ' رقم الهاتف',
                       suffixIcon: const Icon(
                         Icons.mobile_friendly,
-                        color: Color.fromARGB(255, 70, 157, 179),
+                        color: KMainColor,
                         size: 40,
                       ),
                       contentPadding: const EdgeInsets.symmetric(vertical: 17),
@@ -91,7 +93,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                       hintText: ' كلمة المرور',
                       suffixIcon: const Icon(
                         Icons.lock,
-                        color: Color.fromARGB(255, 70, 157, 179),
+                        color: KMainColor,
                         size: 40,
                       ),
                       contentPadding: const EdgeInsets.symmetric(vertical: 17),

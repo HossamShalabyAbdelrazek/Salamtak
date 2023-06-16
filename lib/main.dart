@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:second/screen/createaccount/loginscreen_body.dart';
+import 'package:second/screen/on%20boarding/presentation/widgets/onboardingpage.dart';
+import 'package:second/screen/on%20boarding/presentation/widgets/onboardingview.dart';
 import 'package:second/screen/pages/HomePage_body.dart';
 import 'package:second/screen/pages/botnavbar.dart';
 import 'package:second/screen/splash/presentation/widgets/splashview.dart';

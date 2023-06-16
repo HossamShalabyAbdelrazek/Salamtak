@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:second/core/custom_button.dart';
 
+import '../../core/constants.dart';
+
 class profilePage extends StatefulWidget {
   const profilePage({super.key});
 
@@ -16,6 +18,7 @@ class _profilePageState extends State<profilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: KMainColor,
         centerTitle: true,
         title: const Text('الصفحة الشخصية'),
       ),

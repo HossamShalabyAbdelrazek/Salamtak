@@ -4,8 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:second/screen/createaccount/loginscreen_body.dart';
-
+import 'package:second/core/constants.dart';
+// import 'package:second/screen/createaccount/loginscreen_body.dart';
+import 'package:second/screen/on%20boarding/presentation/widgets/onboardingview.dart';
 
 // import '../../../on boarding/presentation/widgets/onboardingview.dart';
 
@@ -22,23 +23,30 @@ class _splashbodyState extends State<splashbody> {
   @override
   void initState() {
     super.initState();
-    goTologinscreen_body();
+    goToonboardingview();
   }
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'سلامتك',
-        style: TextStyle(
-            fontSize: 40, fontWeight: FontWeight.normal, color: Colors.white),
-      ),
-    );
+    return const Scaffold(
+        backgroundColor: KMainColor,
+        body: Center(
+          child: SizedBox(
+              height: 150,
+              width: 250,
+              child: Image(image: AssetImage('assets/images/logo.png'))
+              //  Text(
+              //   'سلامتك',
+              //   style: TextStyle(
+              //       fontSize: 40, fontWeight: FontWeight.normal, color: Colors.white),
+              // ),
+              ),
+        ));
   }
 }
 
-void goTologinscreen_body() {
-  Future.delayed(const Duration(seconds: 15), () {
-    Get.to(() => const loginscreen_body(), transition: Transition.rightToLeft);
+void goToonboardingview() {
+  Future.delayed(const Duration(seconds: 5), () {
+    Get.to(() => const onboardingview(), transition: Transition.rightToLeft);
   });
 }

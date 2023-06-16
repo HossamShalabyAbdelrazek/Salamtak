@@ -1,6 +1,7 @@
 // ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:second/core/constants.dart';
 import 'package:second/core/custom_button.dart';
 import 'package:second/screen/pages/botnavbar.dart';
 
@@ -27,7 +28,14 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Image(image: AssetImage('assets/images/6.png')),
+                const Divider(
+                  height: 80,
+                ),
+                const Image(image: AssetImage('assets/images/logen.png')),
+                // const Image(image: AssetImage('assets/images/6.png')),
+                const SizedBox(
+                  height: 100,
+                ),
                 Material(
                     child: TextField(
                   textAlign: TextAlign.center,
@@ -35,7 +43,7 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                     hintText: 'اسم المستخدم',
                     suffixIcon: const Icon(
                       Icons.account_circle,
-                      color: Color.fromARGB(255, 70, 157, 179),
+                      color: KMainColor,
                       size: 40,
                     ),
                     contentPadding: const EdgeInsets.symmetric(vertical: 17),
@@ -45,6 +53,9 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                     ),
                   ),
                 )),
+                const Divider(
+                  height: 5,
+                ),
                 Material(
                     child: TextField(
                   textAlign: TextAlign.center,
@@ -52,7 +63,7 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                     hintText: 'كلمة المرور',
                     suffixIcon: const Icon(
                       Icons.lock,
-                      color: Color.fromARGB(255, 70, 157, 179),
+                      color: KMainColor,
                       size: 40,
                     ),
                     contentPadding: const EdgeInsets.symmetric(vertical: 17),
@@ -63,7 +74,7 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                   ),
                 )),
                 const SizedBox(
-                  height: 10,
+                  height: 50,
                 ),
                 Positioned(
                   top: 20,
@@ -73,8 +84,8 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                       Flexible(
                         flex: 1,
                         child: CustomGeneralButton(
-                          height: 60,
-                          width: 300,
+                          height: 70,
+                          width: 250,
                           text: 'تسجيل الدخول',
                           onTap: () {
                             goTobottombar();
@@ -82,6 +93,18 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                           fontsize: 20,
                         ),
                       ),
+                      // Flexible(
+                      //   flex: 1,
+                      //   child: CustomGeneralButton(
+                      //     height: 50,
+                      //     width: 150,
+                      //     text: ' التـسجيل لاحقاً',
+                      //     onTap: () {
+                      //       goTobottombar();
+                      //     },
+                      //     fontsize: 20,
+                      //   ),
+                      // ),
                     ],
                   ),
                 ),
@@ -131,7 +154,6 @@ goTocreateaccount_body() {
         transition: Transition.rightToLeft);
   });
 }
-
 
 goTobottombar() {
   Future.delayed(const Duration(seconds: 0), () {
