@@ -46,9 +46,11 @@ class _onboarding1State extends State<onboarding1> {
                 image: 'assets/images/brd4.png',
                 title: 'قم بالحـجز مع افضل الاطـباء المتخصصين',
               ),
+              
             ],
           ),
         ),
+        
         const Padding(
           padding: EdgeInsets.fromLTRB(20, 0, 20, 40),
           child: Text(

@@ -67,11 +67,14 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
               ],
             ),
           ),
+          const SizedBox(
+            height: 30,
+          ),
           const Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
-                '  ..... مرحـباً بك',
+                '   ..... مرحـباً بك',
                 style: TextStyle(fontSize: 25),
               ),
             ],
@@ -90,7 +93,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
           ),
           Container(
             padding: const EdgeInsets.all(12),
-            child: Row(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomGeneralButton(
@@ -98,8 +101,8 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                     goTologinscreen_body();
                   },
                   height: 60,
-                  width: 160,
-                  fontsize: 16,
+                  width: 250,
+                  fontsize: 20,
                   text: 'تسجيل دخول',
                 ),
                 CustomGeneralButton(
@@ -107,8 +110,8 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                     goTobotnavbar();
                   },
                   height: 60,
-                  width: 160,
-                  fontsize: 16,
+                  width: 250,
+                  fontsize: 20,
                   text: 'تخطي',
                 ),
                 // CustomGeneralButton(
@@ -129,6 +132,7 @@ class _OnBoardingbodyState extends State<OnBoardingbody> {
                 //   fontsize: 15,
                 //   text: 'مقدم خدمة',
                 // ),
+                
               ],
             ),
           )

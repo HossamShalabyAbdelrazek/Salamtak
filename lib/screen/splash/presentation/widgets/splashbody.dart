@@ -46,7 +46,7 @@ class _splashbodyState extends State<splashbody> {
 }
 
 void goToonboardingview() {
-  Future.delayed(const Duration(seconds: 5), () {
+  Future.delayed(const Duration(seconds: 15), () {
     Get.to(() => const onboardingview(), transition: Transition.rightToLeft);
   });
 }

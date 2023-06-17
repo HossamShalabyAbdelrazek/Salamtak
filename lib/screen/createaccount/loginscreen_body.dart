@@ -40,7 +40,7 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                     child: TextField(
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
-                    hintText: 'اسم المستخدم',
+                    hintText: 'البريد الالكتروني ',
                     suffixIcon: const Icon(
                       Icons.account_circle,
                       color: KMainColor,
