@@ -1,4 +1,5 @@
-// ignore: depend_on_referenced_packages
+// ignore_for_file: non_constant_identifier_names, avoid_types_as_parameter_names, depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:second/core/constants.dart';
@@ -15,6 +16,9 @@ class loginscreen_body extends StatefulWidget {
   @override
   State<loginscreen_body> createState() => _loginscreen_bodyState();
 }
+
+late String email;
+late String password;
 
 // ignore: camel_case_types
 class _loginscreen_bodyState extends State<loginscreen_body> {
@@ -38,6 +42,10 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                 ),
                 Material(
                     child: TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  onChanged: (Value) {
+                    email = Value;
+                  },
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
                     hintText: 'البريد الالكتروني ',
@@ -58,6 +66,10 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                 ),
                 Material(
                     child: TextField(
+                  onChanged: (Value) {
+                    password = Value;
+                  },
+                  obscureText: true,
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
                     hintText: 'كلمة المرور',
@@ -125,19 +137,19 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
                     ),
                   ],
                 ),
-                const Text(
-                  'يمكنك التسجيل ايضا عن طريق مواقع التواصل الاجتماعي',
-                  style: TextStyle(fontFamily: "cairo", fontSize: 15),
-                ),
-                const Divider(),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.facebook),
-                    Icon(Icons.mail),
-                    Icon(Icons.mobile_friendly_outlined)
-                  ],
-                )
+                // const Text(
+                //   'يمكنك التسجيل ايضا عن طريق مواقع التواصل الاجتماعي',
+                //   style: TextStyle(fontFamily: "cairo", fontSize: 15),
+                // ),
+                // const Divider(),
+                // const Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Icon(Icons.facebook),
+                //     Icon(Icons.mail),
+                //     Icon(Icons.mobile_friendly_outlined)
+                //   ],
+                // )
               ],
             ),
           ],
@@ -147,7 +159,6 @@ class _loginscreen_bodyState extends State<loginscreen_body> {
   }
 }
 
-// ignore: non_constant_identifier_names
 goTocreateaccount_body() {
   Future.delayed(const Duration(seconds: 0), () {
     Get.to(() => const createaccount_body(),

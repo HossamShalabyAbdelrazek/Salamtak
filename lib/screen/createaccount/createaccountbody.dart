@@ -48,6 +48,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                   padding: const EdgeInsets.all(8.0),
                   child: Material(
                       child: TextField(
+                    keyboardType: TextInputType.emailAddress,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: ' عنوان البريد الإلكتروني ',
@@ -88,6 +89,7 @@ class _createaccount_bodyState extends State<createaccount_body> {
                   padding: const EdgeInsets.all(8.0),
                   child: Material(
                       child: TextField(
+                    obscureText: true,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       hintText: ' كلمة المرور',
